@@ -1,10 +1,8 @@
 #ifndef _EXTENT_LIST_H_
 #define _EXTENT_LIST_H_
 
-typedef unsigned long  uint64_t
-typedef unsigned int   uint32_t
-typedef unsigned short uint16_t
-typedef unsigned char  uint8_t
+#include "extent_blkhandle.h"
+#include "extent_type.h"
 
 // 24 B
 // extent stored in eobj
@@ -14,11 +12,6 @@ struct extent{
     uint32_t free_bitmap;
     uint32_t junk_bitmap;
 };
-
-// start from 1
-// 0 == nullptr
-#define Ext_Nat_Entry_ID_Type   uint16_t
-#define Ext_Node_ID_Type        Ext_Nat_Entry_ID_Type
 
 // 8B
 struct ext_meta_obj{
@@ -43,14 +36,14 @@ struct ext_node{
 // extent_descriptor
 // 24 B
 // stored in file_meta_obj ( 1 KB / 24 B = 42 ... 4 )
-struct ext_descriptor{
+struct extent_descriptor{
 	uint64_t addr_st_buf;
 	uint64_t addr_ed_buf;
 	uint32_t use_bitmap;
 	uint32_t junk_bitmap;
 };
 
-#define EXT_DES_SIZE (sizeof( struct ext_descriptor ))
+#define EXT_DES_SIZE (sizeof( struct extent_descriptor ))
 
 class ExtentList{
 public:
@@ -58,7 +51,7 @@ public:
         int ch,
         uint64_t blk_st, uint64_t blk_ed,
         int ext_size,
-        blk_addr_handle handler);
+        blk_addr_handle* handler);
     ~ExtentList();
 
 	void init();
@@ -77,7 +70,7 @@ private:
 	uint64_t blk_ed;
 	uint64_t blk_nr;
     Ext_Node_ID_Type head_eobj_id;
-    blk_addr_handle handler;
-}
+    blk_addr_handle* handler;
+};
 
 #endif

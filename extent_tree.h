@@ -1,10 +1,9 @@
 #ifndef _EXTENT_TREE_H_
 #define _EXTENT_TREE_H_
 
-typedef unsigned long  uint64_t
-typedef unsigned int   uint32_t
-typedef unsigned short uint16_t
-typedef unsigned char  uint8_t
+#include "extent_stub.h"
+#include "extent_blkhandle.h"
+#include "extent_type.h"
 
 // 24 B
 // extent stored in eobj( extent_tree_node )

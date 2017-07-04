@@ -1,0 +1,441 @@
+ build extent_list 
+ExtentList()
+init()
+ test getNexExt 
+**********
+==========
+eobj{ 1 }.next = 0
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 4294967039     st   = 4 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 0
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 4294967038     st   = 8 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 0
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 4294967037     st   = 12 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 0
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+----------
+     free = 4294967036     st   = 16 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 0
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 4294967035     st   = 20 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 0
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 4294967034     st   = 24 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 0
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 4294967033     st   = 28 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 0
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 28 ; ed   = 32     use  = 0 ; junk = 0
+----------
+     free = 4294967032     st   = 32 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 0
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 28 ; ed   = 32     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 32 ; ed   = 36     use  = 0 ; junk = 0
+----------
+     free = 4294967031     st   = 36 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 0
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 28 ; ed   = 32     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 32 ; ed   = 36     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 36 ; ed   = 40     use  = 0 ; junk = 0
+----------
+     free = 4294967030     st   = 40 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 3
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 28 ; ed   = 32     use  = 0 ; junk = 0
+==========
+eobj{ 3 }.next = 0
+----------
+     free = 0     st   = 32 ; ed   = 36     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 36 ; ed   = 40     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 40 ; ed   = 44     use  = 0 ; junk = 0
+----------
+     free = 4294967029     st   = 44 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 3
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 28 ; ed   = 32     use  = 0 ; junk = 0
+==========
+eobj{ 3 }.next = 0
+----------
+     free = 0     st   = 32 ; ed   = 36     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 36 ; ed   = 40     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 40 ; ed   = 44     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 44 ; ed   = 48     use  = 0 ; junk = 0
+----------
+     free = 4294967028     st   = 48 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 3
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 28 ; ed   = 32     use  = 0 ; junk = 0
+==========
+eobj{ 3 }.next = 0
+----------
+     free = 0     st   = 32 ; ed   = 36     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 36 ; ed   = 40     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 40 ; ed   = 44     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 44 ; ed   = 48     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 48 ; ed   = 52     use  = 0 ; junk = 0
+----------
+     free = 4294967027     st   = 52 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 3
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 28 ; ed   = 32     use  = 0 ; junk = 0
+==========
+eobj{ 3 }.next = 0
+----------
+     free = 0     st   = 32 ; ed   = 36     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 36 ; ed   = 40     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 40 ; ed   = 44     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 44 ; ed   = 48     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 48 ; ed   = 52     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 52 ; ed   = 56     use  = 0 ; junk = 0
+----------
+     free = 4294967026     st   = 56 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 3
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 28 ; ed   = 32     use  = 0 ; junk = 0
+==========
+eobj{ 3 }.next = 4
+----------
+     free = 0     st   = 32 ; ed   = 36     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 36 ; ed   = 40     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 40 ; ed   = 44     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 44 ; ed   = 48     use  = 0 ; junk = 0
+==========
+eobj{ 4 }.next = 0
+----------
+     free = 0     st   = 48 ; ed   = 52     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 52 ; ed   = 56     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 56 ; ed   = 60     use  = 0 ; junk = 0
+----------
+     free = 4294967025     st   = 60 ; ed   = 1023     use  = 0 ; junk = 0
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 3
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 28 ; ed   = 32     use  = 0 ; junk = 0
+==========
+eobj{ 3 }.next = 4
+----------
+     free = 0     st   = 32 ; ed   = 36     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 36 ; ed   = 40     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 40 ; ed   = 44     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 44 ; ed   = 48     use  = 0 ; junk = 0
+==========
+eobj{ 4 }.next = 0
+----------
+     free = 0     st   = 48 ; ed   = 52     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 52 ; ed   = 56     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 56 ; ed   = 60     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 60 ; ed   = 64     use  = 0 ; junk = 0
+----------
+     free = 4294967024     st   = 64 ; ed   = 1023     use  = 0 ; junk = 0
+ test put 
+**********
+==========
+eobj{ 1 }.next = 2
+----------
+     free = 0     st   = 0 ; ed   = 4     use  = 0 ; junk = 1
+----------
+     free = 0     st   = 4 ; ed   = 8     use  = 0 ; junk = 1
+----------
+     free = 0     st   = 8 ; ed   = 12     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 12 ; ed   = 16     use  = 0 ; junk = 0
+==========
+eobj{ 2 }.next = 3
+----------
+     free = 0     st   = 16 ; ed   = 20     use  = 0 ; junk = 1
+----------
+     free = 0     st   = 20 ; ed   = 24     use  = 0 ; junk = 1
+----------
+     free = 0     st   = 24 ; ed   = 28     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 28 ; ed   = 32     use  = 0 ; junk = 0
+==========
+eobj{ 3 }.next = 4
+----------
+     free = 0     st   = 32 ; ed   = 36     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 36 ; ed   = 40     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 40 ; ed   = 44     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 44 ; ed   = 48     use  = 0 ; junk = 0
+==========
+eobj{ 4 }.next = 0
+----------
+     free = 0     st   = 48 ; ed   = 52     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 52 ; ed   = 56     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 56 ; ed   = 60     use  = 0 ; junk = 0
+----------
+     free = 0     st   = 60 ; ed   = 64     use  = 0 ; junk = 0
+----------
+     free = 4294967024     st   = 64 ; ed   = 1023     use  = 0 ; junk = 0
+ text GC() 
+GC() erase eobj{1}
+GC() merge or borrow
+GC() erase eobj{3}
+GC() erase eobj{4}
