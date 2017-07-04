@@ -22,13 +22,14 @@ struct extent{
 // sorting the extent in @free_vblk_num
 struct ext_meta_obj{
     uint32_t free_vblk_num;
-    uint16_t eobj_id;   // uint16_t
+    uint16_t index;   // uint16_t
     uint16_t reserve;
 };
 
 #define Ext_Leaf_Node_Degree            127
 #define Ext_Non_Leaf_Node_Degree        145
-#define Ext_Non_Leaf_Node_Degree_Meta   435 //MUST be { 3 * Ext_Non_Leaf_Node_Degree }
+#define Ext_Non_Leaf_Node_Degree_Meta   ( 3 * Ext_Non_Leaf_Node_Degree )
+//MUST be { 3 * Ext_Non_Leaf_Node_Degree }
 
 // extent_tree_leaf_node
 // node_type == 0
@@ -82,5 +83,33 @@ struct ext_descriptor{
 	uint64_t addr_ed_buf;
 	uint32_t use_bitmap;
 };
+
+#define SIZE_EXT_DES (sizeof( struct ext_descriptor ))
+
+class ExtentTree{
+public:
+	ExtentTree(
+		int ch,
+		uint64_t blk_st, uint64_t blk_ed,
+		int ext_size,
+		blk_addr_handle handler);
+	~ExtentTree();
+
+	void init();
+
+	int getChannel(){ return ch; }
+	int getExtSize(){ return ext_size; }
+
+	struct extent_descriptor* getExt();
+	void putExt(struct extent_descriptor* edes);
+private:
+	int ch;
+	int ext_size;		// 2,4,8
+	uint64_t blk_st;
+	uint64_t blk_ed;
+	uint64_t blk_nr;
+	blk_addr_handle handler;	// to handle blk_addr
+	Ext_Node_ID_Type root_ext_node_id;
+}
 
 #endif
